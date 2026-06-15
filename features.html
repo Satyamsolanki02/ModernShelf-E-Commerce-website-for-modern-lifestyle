@@ -1,0 +1,159 @@
+<!-- features.html (Features Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Discover why ModernShelf is the best choice for premium essentials">
+  <title>ModernShelf | Features</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="animated-bg"></div>
+<div class="particles" id="particles"></div>
+<div class="custom-cursor" id="customCursor"></div>
+
+<header class="site-header" id="header">
+  <div class="container nav-container">
+    <div class="logo">
+      <i class="fas fa-cube"></i> ModernShelf
+    </div>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="features.html" class="active">Features</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <h1 style="
+background: linear-gradient(to right, #ffd1c4, #ff8a5c, #ff6b35);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+display: inline-block;
+">
+Why Choose ModernShelf
+</h1>
+      <p>Experience the difference with our premium features</p>
+    </div>
+  </section>
+
+  <section class="features-detailed">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card large">
+          <i class="fas fa-tachometer-alt"></i>
+          <h3>Lightning Fast Performance</h3>
+          <p>Our platform is optimized for speed with lazy loading, minified assets, and efficient code. Experience instant page loads and smooth interactions.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i> Lazy loading images</li>
+            <li><i class="fas fa-check"></i> Optimized CSS/JS</li>
+            <li><i class="fas fa-check"></i> Fast CDN delivery</li>
+          </ul>
+        </div>
+        <div class="feature-card large">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Fully Responsive Design</h3>
+          <p>Flawless experience on any device - from smartphones to ultra-wide monitors. Our mobile-first approach ensures perfect display everywhere.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i> Mobile-first approach</li>
+            <li><i class="fas fa-check"></i> Flexible grid layouts</li>
+            <li><i class="fas fa-check"></i> Touch-friendly interface</li>
+          </ul>
+        </div>
+        <div class="feature-card large">
+          <i class="fas fa-globe"></i>
+          <h3>Cross-browser Compatible</h3>
+          <p>Tested and verified on all major browsers including Chrome, Firefox, Safari, and Edge. Consistent experience regardless of your browser choice.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i> Chrome & Firefox</li>
+            <li><i class="fas fa-check"></i> Safari & Edge</li>
+            <li><i class="fas fa-check"></i> Mobile browsers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <i class="fas fa-shopping-cart"></i>
+        <div class="stat-number" data-target="10000">0</div>
+        <p>Happy Customers</p>
+      </div>
+      <div class="stat-card">
+        <i class="fas fa-star"></i>
+        <div class="stat-number" data-target="5000">0</div>
+        <p>5-Star Reviews</p>
+      </div>
+      <div class="stat-card">
+        <i class="fas fa-truck"></i>
+        <div class="stat-number" data-target="120">0</div>
+        <p>Countries Served</p>
+      </div>
+      <div class="stat-card">
+        <i class="fas fa-clock"></i>
+        <div class="stat-number" data-target="24">0</div>
+        <p>Hour Support</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="testimonials-grid" id="testimonialsGrid">
+        <div class="testimonial-card">
+          <i class="fas fa-quote-left"></i>
+          <p>Absolutely love my new desk lamp! The quality is exceptional and delivery was super fast.</p>
+          <h4>- Sarah Johnson</h4>
+        </div>
+        <div class="testimonial-card">
+          <i class="fas fa-quote-left"></i>
+          <p>The ergonomic chair changed my work life. Best investment for my home office!</p>
+          <h4>- Michael Chen</h4>
+        </div>
+        <div class="testimonial-card">
+          <i class="fas fa-quote-left"></i>
+          <p>Beautiful products, amazing customer service. Will definitely shop again!</p>
+          <h4>- Emma Rodriguez</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<br><br>
+<footer class="site-footer" style="text-align: center;">
+  <div class="container footer-content">
+    <p>&copy;  Satyam Solanki — Premium Capstone Project</p>
+    <div class="footer-badges">
+      <span><i class="fas fa-bolt"></i> Optimized Performance</span>
+      <span><i class="fas fa-mobile-alt"></i> Fully Responsive</span>
+      <span><i class="fas fa-check-circle"></i> Cross-browser Ready</span>
+    </div>
+  </div>
+</footer>
+
+<div class="performance-toast" id="toast"></div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

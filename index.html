@@ -1,0 +1,95 @@
+<!-- index.html (Home Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="ModernShelf - Premium essentials for modern living">
+  <title>ModernShelf | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="animated-bg"></div>
+<div class="particles" id="particles"></div>
+<div class="custom-cursor" id="customCursor"></div>
+
+<header class="site-header" id="header">
+  <div class="container nav-container">
+    <div class="logo">
+      <i class="fas fa-cube"></i> ModernShelf
+    </div>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-fire"></i> Limited Edition Drop
+      </div>
+      <h1>Curated essentials<br>for Modern Lifestyle</h1>
+      <p>Discover smart design, sustainable quality & exceptional performance.</p>
+      <a href="shop.html" class="btn btn-primary">Explore Collection <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <section class="featured-products">
+    <div class="container">
+      <h2 class="section-title">Featured Products</h2>
+      <div class="products-grid" id="featuredGrid">
+        <div style="text-align: center; padding: 3rem;"><i class="fas fa-spinner fa-pulse"></i> Loading featured items...</div>
+      </div>
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="shop.html" class="btn btn-secondary">View All Products <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container cta-container">
+      <h2>Ready to elevate your space?</h2>
+      <p>Join thousands of satisfied customers who trust ModernShelf for premium essentials.</p>
+      <a href="shop.html" class="btn btn-primary">Shop Now <i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" style="text-align: center;">
+  <div class="container footer-content">
+    <p>&copy; 2026 Satyam Solanki — Premium Capstone Project</p>
+    <div class="footer-badges">
+      <span><i class="fas fa-bolt"></i> Optimized Performance</span>
+      <span><i class="fas fa-mobile-alt"></i> Fully Responsive</span>
+      <span><i class="fas fa-check-circle"></i> Cross-browser Ready</span>
+    </div>
+  </div>
+</footer>
+
+<div class="performance-toast" id="toast"></div>
+
+<script src="js/products-data.js"></script>
+<script src="js/script.js"></script>
+<script>
+  // Load only first 3 products for homepage
+  if (typeof products !== 'undefined') {
+    displayFeaturedProducts(products.slice(0, 3));
+  }
+</script>
+</body>
+</html>

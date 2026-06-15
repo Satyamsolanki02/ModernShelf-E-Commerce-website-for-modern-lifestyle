@@ -1,0 +1,103 @@
+<!-- shop.html (Shop Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Shop premium essentials at ModernShelf">
+  <title>ModernShelf | Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="animated-bg"></div>
+<div class="particles" id="particles"></div>
+<div class="custom-cursor" id="customCursor"></div>
+
+<header class="site-header" id="header">
+  <div class="container nav-container">
+    <div class="logo">
+      <i class="fas fa-cube"></i> ModernShelf
+    </div>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <h1 style="
+background: linear-gradient(to right, #ffd1c4, #ff8a5c, #ff6b35);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+display: inline-block;
+">
+Our Collection
+</h1>
+      <p>Discover premium essentials crafted for modern living</p>
+    </div>
+  </section>
+
+  <section class="shop-section">
+    <div class="container">
+      <div class="shop-filters">
+        <div class="filter-group">
+          <label>Category</label>
+          <select id="categoryFilter">
+            <option value="all">All Products</option>
+            <option value="lighting">Lighting</option>
+            <option value="furniture">Furniture</option>
+            <option value="decor">Decor</option>
+            <option value="electronics">Electronics</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Sort by</label>
+          <select id="sortFilter">
+            <option value="default">Default</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="name">Name</option>
+          </select>
+        </div>
+      </div>
+      <div class="products-grid" id="productsGrid">
+        <div style="text-align: center; padding: 3rem;"><i class="fas fa-spinner fa-pulse"></i> Loading products...</div>
+      </div>
+    </div>
+  </section>
+</main>
+<br><br>
+<footer class="site-footer" style="text-align: center;">
+  <div class="container footer-content">
+    <p>&copy; 2026 Satyam Solanki — Premium Capstone Project</p>
+    <div class="footer-badges">
+      <span><i class="fas fa-bolt"></i> Optimized Performance</span>
+      <span><i class="fas fa-mobile-alt"></i> Fully Responsive</span>
+      <span><i class="fas fa-check-circle"></i> Cross-browser Ready</span>
+    </div>
+  </div>
+</footer>
+
+<div class="performance-toast" id="toast"></div>
+
+<script src="js/script.js"></script>
+<script src="js/products-data.js"></script>
+</body>
+</html>
