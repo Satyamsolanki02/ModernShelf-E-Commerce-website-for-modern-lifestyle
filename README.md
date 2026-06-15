@@ -47,5 +47,3 @@ Tested and verified on:
 - ✅ Microsoft Edge (latest)
 - ✅ Mobile Chrome/Safari (iOS & Android)
 
-
-## 📁 Project Structure
